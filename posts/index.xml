@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Vedha</title>
-    <link>https://example.com/posts/</link>
+    <link>https://vedhasankar.github.io/hugo-first-post/posts/</link>
     <description>Recent content in Posts on Vedha</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 11 Jun 2021 19:18:49 +0530</lastBuildDate><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 11 Jun 2021 19:18:49 +0530</lastBuildDate><atom:link href="https://vedhasankar.github.io/hugo-first-post/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Security in the cloud</title>
-      <link>https://example.com/posts/security-in-the-cloud/</link>
+      <title>My First Post</title>
+      <link>https://vedhasankar.github.io/hugo-first-post/posts/security-in-the-cloud/</link>
       <pubDate>Fri, 11 Jun 2021 19:18:49 +0530</pubDate>
       
-      <guid>https://example.com/posts/security-in-the-cloud/</guid>
+      <guid>https://vedhasankar.github.io/hugo-first-post/posts/security-in-the-cloud/</guid>
       <description>Security in the cloud
   AWS Compliance Programs: Amazon gets tested by many compliance programs. These can be global or not.
   AWS Artifact: Comprehensive list of cross-controlled documents relevant to compliance and security in the AWS cloud.

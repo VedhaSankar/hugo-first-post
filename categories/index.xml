@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Vedha</title>
-    <link>https://example.com/categories/</link>
+    <link>https://vedhasankar.github.io/hugo-first-post/categories/</link>
     <description>Recent content in Categories on Vedha</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language><atom:link href="https://vedhasankar.github.io/hugo-first-post/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
