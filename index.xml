@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vedha</title>
+    <link>https://example.com/</link>
+    <description>Recent content on Vedha</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Fri, 11 Jun 2021 19:18:49 +0530</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Security in the cloud</title>
+      <link>https://example.com/posts/security-in-the-cloud/</link>
+      <pubDate>Fri, 11 Jun 2021 19:18:49 +0530</pubDate>
+      
+      <guid>https://example.com/posts/security-in-the-cloud/</guid>
+      <description>Security in the cloud
+  AWS Compliance Programs: Amazon gets tested by many compliance programs. These can be global or not.
+  AWS Artifact: Comprehensive list of cross-controlled documents relevant to compliance and security in the AWS cloud.
+  AWS Shared Responsibility Model
+  While AWS manages the security of the cloud, security in the cloud is the responsibility of the customer. Customers retain control of what security they choose to implement to protect their own content, platform etc.</description>
+    </item>
+    
+  </channel>
+</rss>

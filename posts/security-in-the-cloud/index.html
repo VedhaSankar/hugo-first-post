@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title> Security in the cloud - Vedha </title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="referrer" content="no-referrer">
+    <meta name="description" content="" />
+    <meta property="og:site_name" content="Vedha" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://example.com/posts/security-in-the-cloud/" />
+    <meta property="og:title" content="Security in the cloud" />
+    <meta property="og:image" content="https://example.com" />
+    <meta property="og:description" content="" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    
+    <meta name="twitter:title" content="Security in the cloud" />
+    <meta name="twitter:description" content="" />
+    <meta name="twitter:image" content="https://example.com" />
+
+    <link rel="canonical" href="https://example.com/posts/security-in-the-cloud/">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://example.comcss/custom.css" />
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github-gist.min.css" integrity="sha512-od7JLoOTxM8w/HSKGzP9Kexc20K9p/M2zxSWsd7H1e4Ctf+8SQFtCWEZnW5u6ul5ehSECa5QmOk9ju2nQMmlVA==" crossorigin="anonymous" />
+    
+
+    
+
+    <link rel="shortcut icon"
+        href="https://example.com/images/favicon.png">
+
+    
+    <link href="https://example.com/index.xml" rel="alternate" type="application/rss+xml" title="Vedha" />
+    
+</head>
+
+<body>
+    
+    <div class="mt-xl header">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <a href="https://example.com">
+                    <h1 class="name">Hugo Tanka Theme</h1>
+                </a>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <ul class="nav nav-primary">
+                
+                <li class="nav-item">
+                    <a class="nav-link" href="https://example.com/">
+                        
+                        Home
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</div>
+
+    <div class="content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <h1 class="mx-0 mx-md-4">Security in the cloud</h1>
+                    <div class="markdown">
+                        
+    <p>Security in the cloud</p>
+<ol>
+<li>
+<p>AWS Compliance Programs: Amazon gets tested by many compliance programs. These can be global or not.</p>
+</li>
+<li>
+<p>AWS Artifact: Comprehensive list of cross-controlled documents relevant to compliance and security in the AWS cloud.</p>
+</li>
+<li>
+<p>AWS Shared Responsibility Model</p>
+</li>
+<li>
+<p>While <strong>AWS</strong> manages the <em><strong>security of the cloud</strong></em>, <strong>security in the cloud</strong> is the responsibility of the <strong>customer</strong>. Customers retain control of what security they choose to implement to protect their own content, platform etc.</p>
+</li>
+<li>
+<p>AWS is responsible for:</p>
+<ol>
+<li>Data Centers</li>
+<li>Regions</li>
+<li>AZ</li>
+<li>Hardware</li>
+<li>Edge locations</li>
+<li>Storage</li>
+<li>Data bases</li>
+<li>Networking</li>
+<li>Compute</li>
+<li>Hypervisor</li>
+<li>Patching RDS, SQL, OS&rsquo;s</li>
+</ol>
+</li>
+<li>
+<p>Customer responsibilites:</p>
+<ol>
+<li>EC2 instances</li>
+<li>Client side data</li>
+<li>Server side data</li>
+<li>Things in S3 should be encrypted by default</li>
+<li>Networking (If you&rsquo;re gonna be communicating over HTTPS or over a VPN etc)</li>
+<li>OS</li>
+<li>Firewalls</li>
+<li>IAM</li>
+<li>Patching EC2</li>
+</ol>
+</li>
+<li>
+<p>AWS WAF: Web application firewall that helps protect your web application from common web exploits.</p>
+</li>
+<li>
+<p>AWS Shield: Managed DDOS (Distributed Denial of Service) protection service that safeguards web applications running on AWS.</p>
+</li>
+<li>
+<p>WAF protects you against hackers, Shield protects you against DDOF attacks.</p>
+</li>
+<li>
+<p>DDOF: When someone sends you alot of malicious traffic, so much traffic that it causes our website to stop responding</p>
+</li>
+<li>
+<p>Shield is turned on automatically with all new AWS accounts</p>
+</li>
+<li>
+<p>Shield, 2 types:</p>
+<ol>
+<li>Standard: Comes with your AWS account</li>
+<li>Advance: More features, 3000$ per month</li>
+</ol>
+</li>
+<li>
+<p>|     |     |     |
+| <strong>AWS Inspector</strong> | <strong>AWS Trusted Advisor</strong> | <strong>CloudTrail</strong> |
+| It&rsquo;s something you install on EC2 and it will inspect the environment for vulnerabilities like if we&rsquo;ve left some port open or if we&rsquo;ve not patched our OS, etc | You use it to have a look at your entire AWS environment, then gives you a report.<br>2 types: Core checks and recommendations<br>Full trusted Advisor (For business and enterprise companies only) | Increases visibility into your user and resource activity by recording AWS management console actions and API calls. You can identify which users and accounts called AWS, the source IP address from which the call was made and when they occurred. Saved into S3 |
+| Runs inside an OS | Global service |     |
+|     | Gives advice on cost optimisations | Operates as a CCTV camera recording all of your AWS account and what people are doing inside it |</p>
+</li>
+<li>
+<p>|     |     |
+| <strong>CloudWatch</strong> | <strong>AWS Config</strong> |
+| Monitoring performance | Provides a detailed view of config of resources in AWS account |
+| Used alot with EC2 | Shows you about AWS config |</p>
+</li>
+</ol>
+<p><strong>Useful References:</strong></p>
+<p><a href="https://aws.amazon.com/compliance/">https://aws.amazon.com/compliance/</a></p>
+<p><a href="https://aws.amazon.com/compliance/shared-responsibility-model/">https://aws.amazon.com/compliance/shared-responsibility-model/</a></p>
+<p><img src="../_resources/abc953059fcc4eacbf83fffe9c4036b9.png" alt="Screenshot from 2021-06-05 11-24-50.png"></p>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section id="comments">
+    <div class="py-3 content">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-lg-8">
+                    <div class="comments">
+                        <script src="https://utteranc.es/client.js" repo=""
+                            issue-term="pathname" label="comment" theme="github-light" crossorigin="anonymous" async>
+                            </script>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    
+
+
+    
+
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js" integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin="anonymous"></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/python.min.js" defer></script>
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/stan.min.js" defer></script>
+        
+        <script>
+            window.addEventListener('load', function() {
+                hljs.initHighlighting();
+            }, true);
+        </script>
+    
+
+    
+
+    
+    
+        
+<script src="https://example.com/js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+</body>
+
+</html>
